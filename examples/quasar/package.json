@@ -1,0 +1,30 @@
+{
+  "name": "quasar",
+  "version": "0.0.1",
+  "private": true,
+  "description": "A Quasar Project",
+  "productName": "Quasar App",
+  "author": "Anthony Fu <anthonyfu117@hotmail.com>",
+  "scripts": {
+    "dev": "quasar dev",
+    "build": "quasar build",
+    "lint": "eslint --ext .js,.ts,.vue ./",
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "dependencies": {
+    "@quasar/extras": "^1.16.5",
+    "quasar": "^2.6.0",
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.4"
+  },
+  "devDependencies": {
+    "@quasar/app-vite": "^1.4.5",
+    "autoprefixer": "^10.4.15",
+    "typescript": "^5.2.2",
+    "unocss": "link:../../packages/unocss"
+  },
+  "stackblitz": {
+    "installDependencies": false,
+    "startCommand": "node .stackblitz.mjs && npm install && npm run dev"
+  }
+}
